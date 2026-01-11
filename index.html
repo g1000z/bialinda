@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bia, leia isso agora 🚨</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #ffc0cb, #ffe6eb);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .card {
+        background: white;
+        max-width: 420px;
+        width: 100%;
+        border-radius: 22px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        padding: 28px;
+        text-align: center;
+        animation: pop 0.8s ease;
+    }
+
+    @keyframes pop {
+        from { opacity: 0; transform: scale(0.85); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    h1 {
+        color: #ff3f7f;
+        margin-bottom: 8px;
+    }
+
+    p {
+        color: #444;
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+
+    .alerta {
+        background: #fff0f5;
+        border-radius: 15px;
+        padding: 12px;
+        margin: 15px 0;
+        font-weight: bold;
+        color: #ff3f7f;
+    }
+
+    .botao {
+        margin-top: 18px;
+        padding: 14px 22px;
+        border: none;
+        border-radius: 40px;
+        background: #ff3f7f;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .botao:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .conteudo {
+        display: none;
+        margin-top: 22px;
+        animation: pop 0.6s ease;
+    }
+
+    .conteudo img {
+        max-width: 100%;
+        border-radius: 16px;
+        margin: 15px 0;
+    }
+
+    .zoeira {
+        background: #ffe6ef;
+        padding: 14px;
+        border-radius: 15px;
+        margin-top: 15px;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 0.85rem;
+        color: #999;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🚨 ATENÇÃO, BIA 🚨</h1>
+
+    <p>
+        Essa página foi criada porque alguém
+        <strong>muito preocupado</strong>  
+        decidiu agir antes que você tomasse
+        <strong>mais um pré-treino</strong>.
+    </p>
+
+    <div class="alerta">
+        ⚠️ RISCO DETECTADO ⚠️ <br>
+        Mulher linda + pré-treino = caos absoluto
+    </div>
+
+    <p>
+        Seu cérebro já está em modo
+        <strong>OAB EXTREME EDITION</strong> 📚⚖️  
+        Não precisa turbinar mais.
+    </p>
+
+    <button class="botao" onclick="mostrarTudo()">
+        Clique por sua conta e risco 😳
+    </button>
+
+    <div class="conteudo" id="conteudo">
+        <img src="https://i.ibb.co/ynyGQ6Gj/flor.jpg" alt="flor">
+
+        <div class="zoeira">
+            🌸 Flor simbólica 🌸 <br><br>
+            Representa você sendo:
+            <br>
+            ✔ linda  
+            ✔ maravilhosa  
+            ✔ inteligente  
+            ✔ futura advogada que vai passar na OAB  
+            <br><br>
+            E também representa o pré-treino que você
+            <strong>não vai mais tomar</strong> 😌🙏
+        </div>
+
+        <p style="margin-top:15px;">
+            Spoiler do futuro:<br>
+            Você passando na OAB,
+            arrasando no direito,
+            sendo uma advogada incrível
+            e alguém aqui pensando:
+            <br><br>
+            <strong>"Caramba, que orgulho dessa mulher."</strong> 💖
+        </p>
+
+        <p>
+            Agora vai estudar 📚  
+            Água, café normal e foco.<br>
+            O pré-treino a gente conversa depois 😂
+        </p>
+    </div>
+
+    <footer>
+        Feito com carinho, zoeira e preocupação genuína 💗
+    </footer>
+</div>
+
+<script>
+    function mostrarTudo() {
+        document.getElementById("conteudo").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
