@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>uma surpresa pra bia</title>
+<title>bia fubanga</title>
 
 <!-- controle do preview do instagram -->
 <meta property="og:title" content="uma surpresa pra bia 💖">
@@ -42,7 +42,7 @@
 
     h1 {
         color: #ff2f6f;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
     p {
@@ -51,8 +51,17 @@
         line-height: 1.55;
     }
 
+    .alerta {
+        background: #fff0f6;
+        border-radius: 16px;
+        padding: 14px;
+        margin: 18px 0;
+        font-weight: bold;
+        color: #ff2f6f;
+    }
+
     .botao {
-        margin-top: 22px;
+        margin-top: 20px;
         padding: 14px 26px;
         border: none;
         border-radius: 40px;
@@ -60,6 +69,12 @@
         color: white;
         font-size: 1rem;
         cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .botao:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.25);
     }
 
     .conteudo {
@@ -68,14 +83,20 @@
         animation: pop 0.6s ease;
     }
 
+    .conteudo img {
+        max-width: 100%;
+        border-radius: 18px;
+        margin: 15px 0;
+    }
+
     .contador {
         background: #ffe6ef;
         padding: 16px;
         border-radius: 18px;
         margin: 18px 0;
         font-size: 1.1rem;
-        font-weight: bold;
         color: #333;
+        font-weight: bold;
     }
 
     .romantico {
@@ -83,14 +104,14 @@
         padding: 18px;
         border-radius: 18px;
         margin-top: 18px;
-        color: #333;
         font-size: 1.05rem;
+        color: #333;
     }
 
-    img {
-        max-width: 100%;
-        border-radius: 18px;
-        margin: 15px 0;
+    footer {
+        margin-top: 22px;
+        font-size: 0.85rem;
+        color: #999;
     }
 </style>
 </head>
@@ -98,79 +119,88 @@
 <body>
 
 <div class="card">
-    <h1>atenção, bia</h1>
+    <h1>🚨 atenção, bia 🚨</h1>
 
     <p>
         essa página existe porque alguém
-        gosta muito de você
-        e acredita demais na futura
-        <strong>advogada mais linda desse brasil</strong>.
+        gosta muito de você  
+        e ficou levemente preocupado
+        com a mistura:
+        <strong>bia + pré-treino</strong>.
     </p>
 
+    <div class="alerta">
+        ⚠️ aviso oficial ⚠️ <br>
+        você já é naturalmente incrível.
+        não precisa acelerar mais.
+    </div>
+
     <p>
-        você já funciona naturalmente em modo
-        <strong>oab</strong> 📚⚖️  
-        então o pré-treino não é necessário 😌
+        seu cérebro já está em
+        <strong>modo OAB</strong> 📚⚖️  
+        e vai te levar muito longe.
     </p>
 
     <button class="botao" onclick="mostrarTudo()">
-        clique aqui 💖
+        clique aqui, futura advogada 💖
     </button>
 
     <div class="conteudo" id="conteudo">
-        <!-- imagem só aparece após o clique -->
+
+        <img src="https://i.ibb.co/ynyGQ6Gj/flor.jpg" alt="flor">
 
         <div class="contador" id="contador">
-            🌸 dias sem pré-treino: calculando…
+            🌸 dias sem pré-treino: calculando… 🌸
         </div>
 
         <div class="romantico">
             bia,<br><br>
-            você é dedicada, inteligente,
-            linda por dentro e por fora.<br><br>
+            essa flor é só um símbolo,
+            porque nenhuma flor chega perto
+            do quanto você é linda,
+            dedicada e especial.<br><br>
 
-            te ver estudando, se esforçando
-            e correndo atrás dos seus sonhos
-            é uma das coisas mais bonitas que existem.<br><br>
+            você estudando, se esforçando,
+            correndo atrás dos seus sonhos…
+            é uma das coisas mais bonitas de ver.<br><br>
 
-            a oab é só uma etapa.
-            você já é incrível agora
-            e vai ser uma advogada maravilhosa.
+            a oab é só um detalhe do caminho.
+            você já é incrível agora,
+            e vai ser uma advogada maravilhosa,
+            daquelas que dão orgulho
+            só de existir. 💖
         </div>
 
         <p style="margin-top:18px;">
-            spoiler do futuro:<br><br>
+            spoiler do futuro:<br>
             você passando na oab,
             sorrindo, realizada,
-            e alguém aqui pensando:<br><br>
+            e alguém aqui pensando:
+            <br><br>
             <strong>
-                “que orgulho imenso de você.”
-            </strong> 💖
+                “que sorte a minha
+                de poder torcer por ela.”
+            </strong> 🥹💘
         </p>
 
         <p>
             agora vai estudar 📚  
             água, foco e carinho.<br>
-            o pré-treino fica de fora 😌
+            o pré-treino a gente deixa de lado 😌
         </p>
     </div>
+
+    <footer>
+        feito com carinho, cuidado e zero cafeína 💗
+    </footer>
 </div>
 
 <script>
 function mostrarTudo() {
-    const conteudo = document.getElementById("conteudo");
-    conteudo.style.display = "block";
-
-    // insere a imagem apenas após o clique
-    if (!document.getElementById("flor")) {
-        const img = document.createElement("img");
-        img.id = "flor";
-        img.src = "https://i.ibb.co/ynyGQ6Gj/flor.jpg";
-        img.alt = "flor";
-        conteudo.prepend(img);
-    }
+    document.getElementById("conteudo").style.display = "block";
 
     let inicio = localStorage.getItem("inicioSemPreTreino");
+
     if (!inicio) {
         inicio = new Date().toISOString();
         localStorage.setItem("inicioSemPreTreino", inicio);
@@ -182,11 +212,12 @@ function mostrarTudo() {
 function atualizarContador() {
     const inicio = new Date(localStorage.getItem("inicioSemPreTreino"));
     const agora = new Date();
-    const dias = Math.floor((agora - inicio) / (1000 * 60 * 60 * 24));
+    const diffTime = agora - inicio;
+    const dias = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
     document.getElementById("contador").innerHTML =
-        `🌸 dias sem pré-treino: <strong>${dias}</strong><br>
-        orgulho aumentando diariamente 💖`;
+        `🌸 dias sem pré-treino: <strong>${dias}</strong> 🌸<br>
+         (orgulho aumentando diariamente 💖)`;
 }
 </script>
 
